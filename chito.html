@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chito-Ryu | UFC Gym</title>
+  <style>
+    body {
+      margin:0; padding:0; 
+      background:#1b1b1b url('images/texture.png') repeat;
+      color:#f0f0f0; font-family:Arial, sans-serif; line-height:1.5;
+    }
+    .container {
+      max-width:1200px; margin:80px auto 2rem auto; padding:1rem;
+    }
+    h1, h2, h3 {
+      text-transform:uppercase; color:#e10600;
+    }
+    .overview-box, .stats-container, .proscons-container, .tips-container {
+      background-color:#2c2c2c; border-radius:6px; padding:1rem; margin-bottom:1rem;
+    }
+    .stats-grid {
+      display:grid; grid-template-columns:1fr 1fr; gap:1rem; margin-top:0.5rem;
+    }
+    .stat-list {
+      list-style:none; padding:0; margin:0;
+    }
+    .links-grid {
+      display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:0.5rem;
+    }
+    .link-box {
+      background:#3a3a3a; border-radius:4px; text-align:center; padding:0.75rem;
+      text-decoration:none; color:#f0f0f0; transition:background 0.3s;
+    }
+    .link-box:hover {
+      background:#e10600;
+    }
+    .style-image {
+      display:block; margin:0 auto 1rem auto;
+      max-width:200px; border:3px solid #e10600; border-radius:4px;
+    }
+  </style>
+</head>
+<body>
+
+  <header style="position:fixed; top:0; left:0; right:0; background-color:#2c2c2c; border-bottom:3px solid #e10600; z-index:1000;">
+    <div style="max-width:1200px; margin:0 auto; display:flex; justify-content:space-between; align-items:center; padding:0.5rem 1rem;">
+      <nav style="display:flex; gap:1rem;">
+        <a href="index.html" style="color:#f0f0f0; text-decoration:none; font-weight:bold;">Home</a>
+        <a href="search.html" style="color:#f0f0f0; text-decoration:none; font-weight:bold;">Search</a>
+        <a href="about.html" style="color:#f0f0f0; text-decoration:none; font-weight:bold;">About Us</a>
+      </nav>
+      <div>
+        <img src="images/ufc_logo.png" alt="UFC Gym Logo" style="max-height:50px;">
+      </div>
+    </div>
+  </header>
+  <div style="height:70px;"></div>
+
+  <div class="container">
+    <h1>Chito-Ryu</h1>
+    <img src="images/chito.png" alt="Chito-Ryu Image" class="style-image">
+    <div class="overview-box">
+      <h2>Overview</h2>
+      <p>Harness the art of defense with Chito-Ryu, a style that emphasizes precise counterattacks and reactive blocking.</p>
+      <p><strong>Miscellaneous:</strong> Allowed in All-Valley: Yes | Made by: Estro | Price: ¥1,850 | Style Type: Defensive</p>
+    </div>
+    <div class="stats-container">
+      <h2>Stats on Moves</h2>
+      <div class="stats-grid">
+        <ul class="stat-list">
+          <li>Punch: Range 3.5 studs, 2.6s CD</li><li>Right Kick: Range 4.4 studs, 1.14s CD</li><li>Left Kick: Range 5 studs, 1.2s CD</li><li>Block: 2.8 s length, 0.01 s post-block</li>
+        </ul>
+        <ul class="stat-list">
+          <li>Block Recharge Multiplier: 0.4</li><li>Delay: 0.575 s</li><li>Guard Break Duration: 4 s</li><li>Guard Break Vulnerability: 1.5 s</li><li>Guard Recovery Delay: 0.6 s</li><li>Minimum Block Length: 0.555 s</li><li>Stun Length: 0.235 s</li><li>Walk Speed: 0.5 studs/s</li><li>Walk Speed Recovery: 0.415 s</li>
+        </ul>
+      </div>
+    </div>
+    <div class="proscons-container">
+      <h2>Pros & Cons</h2>
+      <p><strong>Pros:</strong> Reliable defensive play, reactive counters, precise timing for counterattacks.</p>
+      <p><strong>Cons:</strong> May struggle against highly aggressive opponents and requires excellent timing.</p>
+    </div>
+    <div class="tips-container">
+      <h2>Techniques & Tips</h2>
+      <p>Select a matchup to see strategy pages:</p>
+      <div class="links-grid">
+        <a class="link-box" href="chito_vs_gojo.html">Chito-Ryu vs Gojo-Ryu</a><a class="link-box" href="chito_vs_tangsoodo.html">Chito-Ryu vs Tang Soo Do</a><a class="link-box" href="chito_vs_shotokan.html">Chito-Ryu vs Shotokan</a><a class="link-box" href="chito_vs_streetbrawler.html">Chito-Ryu vs Street Brawler</a><a class="link-box" href="chito_vs_shorin.html">Chito-Ryu vs Shorin-Ryu</a><a class="link-box" href="chito_vs_taekwondo.html">Chito-Ryu vs Taekwondo</a><a class="link-box" href="chito_vs_muaythai.html">Chito-Ryu vs Muay Thai</a><a class="link-box" href="chito_vs_wado.html">Chito-Ryu vs Wado-Ryu</a><a class="link-box" href="chito_vs_kyokushin.html">Chito-Ryu vs Kyokushin</a><a class="link-box" href="chito_vs_kungfu.html">Chito-Ryu vs Kung Fu</a>
+      </div>
+    </div>
+  </div>
+
+  <footer style="background-color:#2c2c2c; text-align:center; padding:1rem; border-top:3px solid #e10600; font-size:0.85rem; color:#ccc;">
+    <p>© 2025 cringywrinkles – UFC Ultimate Fighter Guide</p>
+  </footer>
+
+</body>
+</html>
